@@ -23,12 +23,12 @@ function addTodo(event){
     todoDiv.appendChild(newTodo);
     //COMPLETED BUTTON
     const completedButton = document.createElement('button');
-    completedButton.innerHTML = '<i class="fas fa-check"></i>';
+    completedButton.innerHTML = '<i class="fas fa-check"></i>';//check icon
     completedButton.classList.add('completed-btn');
     todoDiv.appendChild(completedButton);
     //DELETE BUTTON
     const deleteButton = document.createElement('button');
-    deleteButton.innerHTML = '<i class="fas fa-delete"></i>';
+    deleteButton.innerHTML = '<i class="fas fa-trash"></i>'; //trash icon
     deleteButton.classList.add('delete-btn');
     todoDiv.appendChild(deleteButton);
     //APPEND DIV TO LIST
