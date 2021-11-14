@@ -17,7 +17,7 @@ function addTodo(event){
     todoDiv.classList.add('todo');
     //Create li
     const newTodo = document.createElement('li');
-    newTodo.innerText = 'ciao';
+    newTodo.innerText = todoInput.value; //il valore scritto dentro l'input, viene stampato nel LI
     newTodo.classList.add('todo-item');
     //attached li in the div
     todoDiv.appendChild(newTodo);
@@ -33,6 +33,8 @@ function addTodo(event){
     todoDiv.appendChild(deleteButton);
     //APPEND DIV TO LIST
     todoList.appendChild(todoDiv);
+    //Clear input value after adding the new LI
+    todoInput.value = '';
 
 
 }
