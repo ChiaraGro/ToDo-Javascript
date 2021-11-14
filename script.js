@@ -21,6 +21,18 @@ function addTodo(event){
     newTodo.classList.add('todo-item');
     //attached li in the div
     todoDiv.appendChild(newTodo);
+    //COMPLETED BUTTON
+    const completedButton = document.createElement('button');
+    completedButton.innerHTML = '<i class="fas fa-check"></i>';
+    completedButton.classList.add('completed-btn');
+    todoDiv.appendChild(completedButton);
+    //DELETE BUTTON
+    const deleteButton = document.createElement('button');
+    deleteButton.innerHTML = '<i class="fas fa-delete"></i>';
+    deleteButton.classList.add('delete-btn');
+    todoDiv.appendChild(deleteButton);
+    //APPEND DIV TO LIST
+    todoList.appendChild(todoDiv);
 
 
 }
