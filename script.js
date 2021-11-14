@@ -8,3 +8,13 @@ todoButton.addEventListener('click', addTodo);
 
 
 //Functions
+function addTodo(event){
+    //prevent form from submitting
+    event.preventDefault();
+    // create div by clicking
+    const todoDiv = document.createElement('div');
+    //add class
+    todoDiv.classList.add('todo');
+
+
+}
